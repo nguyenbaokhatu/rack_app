@@ -1,4 +1,4 @@
-Module Frack
+module Frack
   class Application
     class << self
       def call(env)

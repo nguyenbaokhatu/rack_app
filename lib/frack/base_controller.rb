@@ -1,4 +1,4 @@
-Module Frack
+module Frack
   class BaseController
     def render(view)
       puts "------------------------------> view: #{view}"
