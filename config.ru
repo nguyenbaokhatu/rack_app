@@ -29,6 +29,13 @@ module Frack
     def render_template(path, &block)
       Tilt.new("app/views/#{path}.html.erb").render(self, &block)
     end
+
+    class UsersController < Frack::BaseController
+      def index
+        @users=User.all
+        render'users/index'
+      end
+    end
   end
 end
 
