@@ -44,6 +44,12 @@ class WelcomeController < Frack::BaseController
   end
 end
 
+class User
+  def self.all
+    ['Tam', 'Tri', 'Son', 'Toan', 'Tu']
+  end
+end
+
 use Rack::Static, root: 'public', urls: ['/images', '/js', '/css']
 use Rack::CommonLogger
 use Rack::ContentLength
