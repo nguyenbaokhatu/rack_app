@@ -21,6 +21,6 @@ class Router
   end
 
   def controller_action(mapping)
-    Hash[%w(controlleraction).zip mapping.split('#')]
+    Hash[%w(controller action).zip mapping.split('#')]
   end
 end
