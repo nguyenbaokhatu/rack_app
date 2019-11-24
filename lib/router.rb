@@ -1,5 +1,4 @@
 class Router
-
   attr_reader:app
 
   ROUTES = {
