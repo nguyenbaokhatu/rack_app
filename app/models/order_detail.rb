@@ -1,2 +1,2 @@
-class Order_detail
+class Order_detail < ActiveRecord::Base
 end
