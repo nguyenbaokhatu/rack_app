@@ -12,6 +12,7 @@ require 'active_record'
 require_relative '../config/database'
 
 require 'app/models/user.rb'
+require 'app/validators/category_validator.rb'
 require 'app/models/product.rb'
 require 'app/models/category.rb'
 require 'app/models/order.rb'
