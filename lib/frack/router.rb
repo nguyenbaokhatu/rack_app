@@ -4,7 +4,8 @@ module Frack
 
     ROUTES = {
       '/' => 'WelcomeController#index',
-      '/users' => 'UsersController#index'
+      '/users' => 'UsersController#index',
+      '/sign_up' => 'UsersController#new'
     }
     def initialize(app)
       @app = app

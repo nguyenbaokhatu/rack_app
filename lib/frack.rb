@@ -4,6 +4,7 @@ $LOAD_PATH << File.expand_path('../', File.dirname(__FILE__))
 require 'rack'
 require 'tilt'
 
+require 'bcrypt'
 require 'erb'
 require 'active_record'
 
