@@ -20,6 +20,6 @@ class UsersController < Frack::BaseController
 
   private
   def user_params
-    params.require(:user).permit(:email, :password_digest)
+    request.params['user']
   end
 end
