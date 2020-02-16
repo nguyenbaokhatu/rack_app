@@ -9,6 +9,8 @@ require 'bcrypt'
 require 'erb'
 require 'active_record'
 
+ActiveRecord::Base.logger = Logger.new(STDOUT)
+
 require_relative '../config/database'
 require 'app/validators/category_validator.rb'
 
