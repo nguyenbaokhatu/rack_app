@@ -11,4 +11,10 @@ class User < ActiveRecord::Base
       t.timestamps
     end
   end
+
+  after_create :send_welcome_email
+
+  def send_welcome_email
+    puts "Send welcome email!!!"
+  end
 end
