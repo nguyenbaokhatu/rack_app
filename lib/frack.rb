@@ -9,14 +9,6 @@ require 'bcrypt'
 require 'erb'
 require 'active_record'
 
-#ENV['APP_ENV'] || 'development'
-# .env.development
-# .env.test
-APP_ENV='development'
-DATABASE_USER_NAME='khatu'
-DATABASE_PASSWORD='123456'
-DATABSE_URL='rack_app'
-
 require_relative '../config/database'
 require 'app/validators/category_validator.rb'
 
