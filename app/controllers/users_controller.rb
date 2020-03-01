@@ -12,6 +12,7 @@ class UsersController < Frack::BaseController
   def create
     @user = User.new (user_params)
     if @user.save
+      UserMailer.with(user: @user).welcome_email
       redirect('/')
     else
       render('users/new')
